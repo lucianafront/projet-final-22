@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rodape component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="footer"
+  >
+    <p>
+      Ⓒ Desenvolvido por Luciana S. Felix
+    </p>
+  </div>
+</DocumentFragment>
+`;

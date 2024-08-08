@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Cabecalho from "./components/Cabecalho";
+import Rodape from "./components/Rodape";
+import NotasProvider from "./context/notas.context";
+import AdicionarNota from "./components/AdicionarNota";
+import Notas from "./components/Notas";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <NotasProvider>
+      <div className="App">
+        <Cabecalho />
+        <main>
+          <AdicionarNota />
+          <Notas />
+        </main>
+        <Rodape />
+      </div>
+    </NotasProvider>
   );
 }
 
